@@ -1,15 +1,36 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const museoSans = localFont({
+  src: [
+    {
+      path: "../assets/fonts/fonnts.com-Museo_Sans_Rounded_100.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/fonnts.com-Museo_Sans_Rounded_300.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/fonnts.com-Museo_Sans_Rounded_500.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/fonnts.com-Museo_Sans_Rounded_700.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/fonnts.com-Museo_Sans_Rounded_900.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-museo-sans",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${museoSans.variable} antialiased`}
       >
         {children}
       </body>
