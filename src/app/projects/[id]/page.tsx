@@ -60,7 +60,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-neutral-400 hover:text-neutral-300 transition-colors duration-200"
                 >
-                  {project.demoLink}
+                  {project.demoUrl.includes('x.com') ? 'Project Video' : 'Live Demo'}
                   <ExternalLink className="w-4 h-4" />
                 </a>
              </div>
