@@ -51,10 +51,10 @@ export default function Home(){
           {/* Left Column - Profile */}
           <div className="space-y-6">
             <div className="flex items-center gap-4">
-              <Avatar src={pfpImage.src} alt="Vansh Parate" size="lg" />
+              <Avatar src={pfpImage.src} alt="Vansh Parate" size="lg" className="avatar-hover" />
               <div>
-                <h1 className="text-xl font-light">Vansh Parate</h1>
-                <p className="text-neutral-400 text-sm">@radeon74055</p>
+                <h1 className="text-xl font-light text-transition hover:text-neutral-200">Vansh Parate</h1>
+                <p className="text-neutral-400 text-sm text-transition hover:text-neutral-300">@radeon74055</p>
               </div>
             </div>
 
@@ -66,19 +66,19 @@ export default function Home(){
                   className="text-neutral-100 font-normal"
                 />
               </h2>
-              <p className="text-neutral-400 text-sm leading-relaxed">
+              <p className="text-neutral-400 text-sm leading-relaxed text-transition hover:text-neutral-300">
                 Full-stack developer crafting thoughtful products at the intersection of design and technology.
               </p>
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-xs text-neutral-400">Available for new opportunities</span>
+              <div className="w-2 h-2 bg-green-400 rounded-full pulse-gentle"></div>
+              <span className="text-xs text-neutral-400 text-transition hover:text-neutral-300">Available for new opportunities</span>
             </div>
 
             <div className="pt-4">
               <a href="mailto:vanshparate@gmail.com">
-                <Button className="bg-neutral-100 text-black hover:bg-neutral-200 text-sm cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <Button className="bg-neutral-100 text-black hover:bg-neutral-200 text-sm cursor-pointer hover-lift">
                   <MailIcon className="w-4 h-4 mr-2" />
                   Get in touch
                 </Button>
@@ -94,10 +94,10 @@ export default function Home(){
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`pb-3 text-sm transition-colors duration-200 border-b-2 ${
+                  className={`pb-3 text-sm tab-transition border-b-2 text-transition ${
                     activeTab === tab.id
                       ? "text-neutral-100 border-neutral-100"
-                      : "text-neutral-500 hover:text-neutral-300 border-transparent"
+                      : "text-neutral-500 hover:text-neutral-300 border-transparent hover:border-neutral-600"
                   }`}
                 >
                   {tab.label}
@@ -113,8 +113,8 @@ export default function Home(){
         {/* Footer */}
         <div className="mt-12 pt-6 border-t border-neutral-900">
           <div className="flex items-center justify-between text-xs text-neutral-500">
-            <p>© 2025 Vansh Parate</p>
-            <p>Built with Next.js</p>
+            <p className="text-transition hover:text-neutral-400">© 2025 Vansh Parate</p>
+            <p className="text-transition hover:text-neutral-400">Built with Next.js</p>
           </div>
         </div>
       </div>

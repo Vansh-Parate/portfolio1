@@ -14,12 +14,12 @@ interface AvatarProps {
   
     return (
       <div
-        className={`${sizeClasses[size]} rounded-full overflow-hidden bg-neutral-800 border border-neutral-700 ${className}`}
+        className={`${sizeClasses[size]} rounded-full overflow-hidden bg-neutral-800 border border-neutral-700 transition-all duration-300 ease-out hover:border-neutral-500 ${className}`}
       >
         {src ? (
-          <img src={src || "/placeholder.svg"} alt={alt} className="w-full h-full object-cover" />
+          <img src={src || "/placeholder.svg"} alt={alt} className="w-full h-full object-cover transition-transform duration-300 ease-out hover:scale-110" />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-neutral-400 font-medium">
+          <div className="w-full h-full flex items-center justify-center text-neutral-400 font-medium transition-colors duration-200 ease-out hover:text-neutral-300">
             {alt.charAt(0).toUpperCase()}
           </div>
         )}

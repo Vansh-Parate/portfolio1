@@ -128,3 +128,98 @@
   }
 }
 
+/* Micro-interactions */
+@layer utilities {
+  /* Smooth hover transitions */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+  
+  /* Subtle scale on hover */
+  .hover-scale {
+    @apply transition-transform duration-200 ease-out;
+  }
+  
+  .hover-scale:hover {
+    @apply transform scale-105;
+  }
+  
+  /* Glow effect on hover */
+  .hover-glow {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-glow:hover {
+    @apply shadow-[0_0_20px_rgba(255,255,255,0.1)];
+  }
+  
+  /* Text color transition */
+  .text-transition {
+    @apply transition-colors duration-200 ease-out;
+  }
+  
+  /* Border animation */
+  .border-animate {
+    @apply relative overflow-hidden;
+  }
+  
+  .border-animate::before {
+    content: '';
+    @apply absolute inset-0 border border-transparent transition-all duration-300 ease-out;
+  }
+  
+  .border-animate:hover::before {
+    @apply border-neutral-400;
+  }
+  
+  /* Pulse animation for status indicator */
+  .pulse-gentle {
+    animation: pulse-gentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse-gentle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Smooth tab transitions */
+  .tab-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  /* Avatar hover effect */
+  .avatar-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .avatar-hover:hover {
+    @apply transform scale-110 shadow-lg;
+  }
+  
+  /* Project card hover */
+  .project-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .project-hover:hover {
+    @apply transform translate-x-1 bg-neutral-900/50;
+  }
+  
+  /* Button press effect */
+  .button-press {
+    @apply transition-all duration-150 ease-out;
+  }
+  
+  .button-press:active {
+    @apply transform scale-95;
+  }
+}
+
