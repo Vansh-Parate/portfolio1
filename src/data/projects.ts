@@ -25,5 +25,18 @@ export const projects = [
       ],
       demoUrl: "https://x.com/radeon74055/status/1822940638179975212"
     },
+
+    {
+      id: "travel-blog",
+      name: "Travel Blog",
+      description: "A modern travel blog showcasing destinations and experiences",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Next.js"],
+      features: [
+        "Built a responsive travel blog using React and TypeScript with modern UI/UX design principles and smooth animations.",
+        "Implemented clean, minimalist design with focus on readability and visual appeal for travel content and photography.",
+        "Deployed on Vercel with optimized performance."
+      ],
+      demoUrl: "https://travel-blog-tan-beta.vercel.app/"
+    },
     
   ]
