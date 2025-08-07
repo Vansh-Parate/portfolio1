@@ -30,13 +30,26 @@ export const projects = [
       id: "travel-blog",
       name: "Travel Blog",
       description: "A modern travel blog showcasing destinations and experiences",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Next.js"],
+      tech: ["React", "JavaScript", "Tailwind CSS", "Vercel"],
       features: [
         "Built a responsive travel blog using React and TypeScript with modern UI/UX design principles and smooth animations.",
         "Implemented clean, minimalist design with focus on readability and visual appeal for travel content and photography.",
         "Deployed on Vercel with optimized performance."
       ],
       demoUrl: "https://travel-blog-tan-beta.vercel.app/"
+    },
+
+    {
+      id: "pixel-forge",
+      name: "Pixel Forge",
+      description: "A creative hackathon project focused on pixel art and design",
+      tech: ["React", "JavaScript", "Tailwind CSS", "Vercel"],
+      features: [
+        "Developed a frontend-only hackathon project showcasing creative pixel art and design capabilities using React and TypeScript.",
+        "Implemented interactive UI components with smooth animations and modern design principles for an engaging user experience.",
+        "Built responsive design with Tailwind CSS ensuring optimal viewing across different devices and screen sizes."
+      ],
+      demoUrl: "https://pixel-forge-chi.vercel.app/"
     },
     
   ]
