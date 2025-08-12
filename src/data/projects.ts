@@ -1,5 +1,19 @@
 export const projects = [
 
+  {
+    id: "acadly-mentor",
+    name: "Acadly Mentor",
+    description: "A mentorship platform connecting students with experienced mentors",
+    type: "Fullstack",
+    tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "JWT", "Express"],
+    features: [
+      "Built a comprehensive mentorship platform with React/TypeScript frontend and Node.js backend for connecting students with experienced mentors.",
+      "Implemented user authentication, profile management, and real-time messaging system for seamless mentor-student communication.",
+      "Developed advanced search and filtering capabilities to help users find the perfect mentor based on skills, experience, and availability."
+    ],
+    demoUrl: "https://acadly-mentor.vercel.app/"
+  },
+
     {
         id: "greencare",
         name: "GreenThumb - Plant Care Assistant",
@@ -41,7 +55,7 @@ export const projects = [
       ],
       demoUrl: "https://pixel-forge-chi.vercel.app/"
     },
-    
+
     {
       id: "payease",
       name: "Payment Website",
@@ -55,4 +69,5 @@ export const projects = [
       ],
       demoUrl: "https://x.com/radeon74055/status/1822940638179975212"
     },
+    
   ]
