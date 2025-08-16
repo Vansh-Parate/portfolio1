@@ -47,6 +47,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
                          <div className="flex items-center gap-3">
                <a 
+                 key={2}
                  href={`https://github.com/Vansh-Parate/${project.id}`}
                  target="_blank"
                  rel="noopener noreferrer"
